@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCartTableViewCell" rowHeight="119" id="ybm-HY-rr5" customClass="MyCartTableViewCell" customModule="NeoStoreApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ybm-HY-rr5" id="Xmq-7C-fKG">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qRO-o4-A2P">
+                        <rect key="frame" x="5" y="5" width="120" height="109"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="XG4-En-gdL"/>
+                            <constraint firstAttribute="height" constant="109" id="oLf-2G-3q8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNT-Nj-FaX">
+                        <rect key="frame" x="130" y="5" width="274" height="23"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgN-X6-8oN">
+                        <rect key="frame" x="130" y="33" width="274" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3VP-Ap-e8g" customClass="DropDown" customModule="iOSDropDown">
+                        <rect key="frame" x="133" y="70" width="70" height="34"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="wrR-te-xmM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWL-OZ-T5U">
+                        <rect key="frame" x="345.33333333333331" y="77" width="43.666666666666686" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qRO-o4-A2P" secondAttribute="bottom" constant="5" id="1Sr-iA-bmx"/>
+                    <constraint firstItem="QNT-Nj-FaX" firstAttribute="leading" secondItem="qRO-o4-A2P" secondAttribute="trailing" constant="5" id="4ih-lz-kKC"/>
+                    <constraint firstAttribute="bottom" secondItem="3VP-Ap-e8g" secondAttribute="bottom" constant="15" id="7Mg-Ye-u3p"/>
+                    <constraint firstAttribute="trailing" secondItem="HWL-OZ-T5U" secondAttribute="trailing" constant="20" id="Of3-60-D7v"/>
+                    <constraint firstItem="wgN-X6-8oN" firstAttribute="top" secondItem="QNT-Nj-FaX" secondAttribute="bottom" constant="5" id="R5E-8a-794"/>
+                    <constraint firstItem="QNT-Nj-FaX" firstAttribute="top" secondItem="Xmq-7C-fKG" secondAttribute="top" constant="5" id="Stf-8h-0nD"/>
+                    <constraint firstItem="3VP-Ap-e8g" firstAttribute="leading" secondItem="qRO-o4-A2P" secondAttribute="trailing" constant="8" id="TOS-fS-qAQ"/>
+                    <constraint firstItem="wgN-X6-8oN" firstAttribute="leading" secondItem="qRO-o4-A2P" secondAttribute="trailing" constant="5" id="byy-XR-s70"/>
+                    <constraint firstAttribute="bottom" secondItem="HWL-OZ-T5U" secondAttribute="bottom" constant="21" id="gIZ-g0-J5X"/>
+                    <constraint firstItem="qRO-o4-A2P" firstAttribute="leading" secondItem="Xmq-7C-fKG" secondAttribute="leading" constant="5" id="krE-gB-3sX"/>
+                    <constraint firstAttribute="trailing" secondItem="QNT-Nj-FaX" secondAttribute="trailing" constant="5" id="l7T-e7-F5A"/>
+                    <constraint firstItem="qRO-o4-A2P" firstAttribute="top" secondItem="Xmq-7C-fKG" secondAttribute="top" constant="5" id="tJr-ew-U3n"/>
+                    <constraint firstAttribute="trailing" secondItem="wgN-X6-8oN" secondAttribute="trailing" constant="5" id="upl-i9-MTe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="OwL-XD-mXR"/>
+            <connections>
+                <outlet property="category" destination="wgN-X6-8oN" id="0Os-oS-lcJ"/>
+                <outlet property="dropDown" destination="3VP-Ap-e8g" id="kQ1-7g-ebp"/>
+                <outlet property="imgView" destination="qRO-o4-A2P" id="ItX-Ca-HKb"/>
+                <outlet property="name" destination="QNT-Nj-FaX" id="61N-Yv-qQi"/>
+                <outlet property="price" destination="HWL-OZ-T5U" id="zf6-td-dZs"/>
+            </connections>
+            <point key="canvasLocation" x="576.33587786259545" y="41.197183098591552"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
